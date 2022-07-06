@@ -8,3 +8,6 @@ def home(request):
 
 def about(request):
     return HttpResponse('<h1>Blog About</h1>')
+
+def login(request):
+    return HttpResponse('<h1>Login Page</h1>')
