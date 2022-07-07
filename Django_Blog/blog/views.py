@@ -1,13 +1,9 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
 # Function-based view
 def home(request):
-    return HttpResponse('<h1>Blog Home</h1>')
+    return render(request, 'blog/home.html')
 
 def about(request):
-    return HttpResponse('<h1>Blog About</h1>')
-
-def login(request):
-    return HttpResponse('<h1>Login Page</h1>')
+    return render(request, 'blog/about.html')
